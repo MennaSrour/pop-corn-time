@@ -1,4 +1,4 @@
-package com.menna.popcorntime.ui.theme
+package com.example.popcorntime.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

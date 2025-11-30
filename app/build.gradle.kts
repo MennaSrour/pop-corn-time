@@ -74,5 +74,7 @@ dependencies {
     implementation(libs.coroutines.core)
     implementation(libs.hilt.android)
     implementation(libs.bundles.datastore)
+    implementation("cafe.adriel.voyager:voyager-navigator:1.1.0-beta02")
+
 
 }
