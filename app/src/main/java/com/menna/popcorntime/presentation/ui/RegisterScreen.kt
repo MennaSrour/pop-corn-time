@@ -33,7 +33,7 @@ import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
 import com.example.popcorntime.R
 import com.example.popcorntime.ui.theme.orbitronsFontFamily
-import com.example.popcorntime.viewmodel.FirebaseAuthViewModel
+import com.example.popcorntime.presentation.viewmodel.FirebaseAuthViewModel
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 class RegisterScreen : Screen {

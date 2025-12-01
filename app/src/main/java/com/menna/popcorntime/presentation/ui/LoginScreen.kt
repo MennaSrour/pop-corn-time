@@ -31,6 +31,7 @@ import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
 import com.example.popcorntime.presentation.viewmodel.LoginViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.popcorntime.ui.theme.orbitronsFontFamily
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
@@ -47,7 +48,7 @@ class LoginScreen : Screen {
 
         val navigator = LocalNavigator.currentOrThrow
         val context = LocalContext.current
-        val loginViewModel: LoginViewModel = hiltViewModel()
+        val loginViewModel: LoginViewModel = viewModel()
         val email = rememberSaveable { mutableStateOf("") }
         val password = rememberSaveable { mutableStateOf("") }
 

@@ -2,14 +2,15 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+
 }
 
 android {
-    namespace = "com.menna.popcorntime"
+    namespace = "com.example.popcorntime"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.menna.popcorntime"
+        applicationId = "com.example.popcorntime"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -61,10 +62,15 @@ dependencies {
     implementation(libs.serialization.json)
     implementation(libs.logging.interceptor)
 
+    // Koin for DI
+    implementation("io.insert-koin:koin-android:3.4.0")
+    implementation("io.insert-koin:koin-androidx-compose:3.4.0")
+
     implementation(libs.retrofit)
     implementation(libs.retrofit.converter.kotlinx.serialization)
     implementation (libs.okhttp)
     implementation(libs.hilt.android)
+    // Hilt kapt lines removed for now to avoid plugin/classpath conflicts
     androidTestImplementation(libs.room.testing)
     androidTestImplementation(libs.runner)
     androidTestImplementation(libs.core.testing)
